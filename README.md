@@ -1,16 +1,69 @@
-# React + Vite
+# ✈️ TripGenie AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+An AI-powered travel planner that helps users create personalized travel itineraries using Google Gemini.
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- AI-powered personalized travel itinerary generation
+- Destination, duration, traveller and budget selection
+- Day-wise travel activities and recommendations
+- Interactive maps using OpenStreetMap
+- Estimated trip budget
+- Downloadable PDF travel itineraries
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Frontend:** React.js, Vite, Tailwind CSS, JavaScript
 
-## Expanding the Oxlint configuration
+**Backend:** Node.js, Express.js
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+**AI Integration:** Google Gemini API
+
+**Maps:** Leaflet, React Leaflet, OpenStreetMap
+
+**PDF Generation:** jsPDF
+
+## 📁 Project Structure
+
+```text
+TripGenie/
+├── src/
+│   └── components/
+├── server/
+├── public/
+├── package.json
+└── README.md
+```
+
+## ⚙️ Current Development Status
+
+- [x] Frontend UI
+- [x] Gemini AI integration
+- [x] AI itinerary generation
+- [x] Interactive map integration
+- [x] PDF download
+- [ ] MongoDB integration
+- [ ] User authentication
+- [ ] Save and manage trips
+
+## 🚀 Future Improvements
+
+- User registration and login
+- Save previously generated trips
+- Personalized travel recommendations
+- Improved map routes and navigation
+
+## 🔐 Environment Variables
+
+Create a `.env` file inside the `server` folder:
+
+```env
+PORT=5000
+GEMINI_API_KEY=your_gemini_api_key
+```
+
+Never commit your actual API key to GitHub.
+
+## 👨‍💻 Author
+
+Developed as a personal project to explore AI-powered travel planning and full-stack web development.
