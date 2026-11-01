@@ -72,16 +72,17 @@ function Hero() {
       setMessage("Creating your personalized AI itinerary...");
       setItinerary(null);
 
-      const response = await fetch(
-        "http://localhost:5000/api/trips",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(tripDetails),
-        }
-      );
+      const API_URL =
+  import.meta.env.VITE_API_URL || "http://localhost:5000";
+
+const response = await fetch(`${API_URL}/api/trips`, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  credentials: "include",
+  body: JSON.stringify(tripDetails),
+});
 
       const data = await response.json();
 
